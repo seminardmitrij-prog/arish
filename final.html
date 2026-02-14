@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>аришок</title>
+</head>
+
+<style>
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+
+  background: linear-gradient(#e2f9ff, #edfeff);
+
+  min-height: 100vh;
+}
+.final-wrapper {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+.final-title {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #3a2b33;
+}
+
+.final-intro {
+  opacity: 0.7;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  margin-bottom: 50px;
+}
+
+.photo-card {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background: transparent;
+}
+
+.photo-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.32);
+}
+
+.photo-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+.letter {
+  text-align: left;
+  line-height: 1.75;
+  font-size: 22px;
+  margin-bottom: 40px;
+
+  background: rgba(255, 255, 255, 0.65);
+  padding: 32px;
+  border-radius: 24px;
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+.letter p {
+  margin-bottom: 16px;
+}
+
+.final-sign {
+  opacity: 0.6;
+  font-size: 30px;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 430px) {
+  .final-wrapper {
+    margin: 30px auto;
+    padding: 16px;
+  }
+
+  .final-title {
+    font-size: 26px;
+  }
+
+  .final-intro {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .letter {
+    font-size: 15px;
+    padding: 18px;
+    line-height: 1.6;
+  }
+
+  .final-sign {
+    font-size: 20px;
+  }
+}
+
+
+</style>
+
+<body>
+
+    <div class="final-wrapper">
+
+  <h1 class="final-title">для тебя</h1>
+
+  <p class="final-intro">
+    здесь просто то, что я хотел сказать искренне
+  </p>
+
+<div class="photo-grid">
+
+  <div class="photo-card">
+    <img src="img1.png" alt="фото">
+  </div>
+
+  <div class="photo-card">
+    <img src="img2.jpg" alt="фото">
+  </div>
+
+  <div class="photo-card">
+    <img src="img3.jpg" alt="фото">
+  </div>
+
+  <div class="photo-card">
+    <img src="img4.jpg" alt="фото">
+  </div>
+
+  <div class="photo-card">
+    <img src="img5.jpg" alt="фото">
+  </div>
+
+  <div class="photo-card">
+    <img src="img6.jpg" alt="фото">
+  </div>
+
+</div>
+
+
+  <div class="letter">
+    <p>я долго думал, как написать это правильно. без лишних громких слов, просто по-человечески и честно. за всё время общения я всё чаще ловлю себя на мысли, что в тебе есть что-то очень тёплое и настоящее. ты умеешь быть спокойной, умеешь слушать, умеешь замечать мелочи и это правда редкость. рядом с такими людьми всегда как-то легче жить. мне нравится твоя искренность, нравится, что ты не пытаешься казаться кем-то другим. в тебе чувствуется живая душа, мягкость характера. это то сочетание, которое не бросается в глаза сразу, но со временем ценится всё больше</p>
+    <p>иногда достаточно просто нескольких сообщений от тебя и настроение уже становится лучше. ты умеешь создавать это спокойное, светлое ощущение, когда внутри становится немного теплее. и, честно, это дорогого стоит. я очень хочу, чтобы у тебя впереди было как можно больше по-настоящему хороших дней. чтобы рядом были люди, которые тебя ценят и берегут. чтобы мечты, даже самые простенькие, постепенно сбывались. пусть у тебя всегда хватает сил идти вперёд в своём темпе. пусть будет больше поводов улыбаться, не из вежливости, а потому что внутри правда хочется и пусть всё добро, которое есть в тебе, обязательно возвращается к тебе обратно</p>
+    <p>просто знай одну вещь - ты правда умеешь делать этот мир, мой внутренний мир теплее. и это очень ценно. с хорошим настроением для тебя, и с 14 февраля!❤</p>
+  </div>
+
+  <div class="final-sign">
+    — с теплом
+  </div>
+
+</div>
+
+    
+</body>
+</html>

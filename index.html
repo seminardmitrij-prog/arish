@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>14 февраля</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(#e2f9ff) #edfeff;
+  overflow: hidden;
+}
+
+.bg-bubble {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  animation: float 12s linear infinite;
+}
+
+@keyframes float {
+  from { transform: translateY(110vh); }
+  to   { transform: translateY(-10vh); }
+}
+
+.card {
+  background: rgba(199, 253, 255, 0.507);
+  backdrop-filter: blur(6px);
+  padding: 48px;
+  border-radius: 24px;
+  max-width: 560px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.158);
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(54, 20, 20);
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(54, 20, 20);
+  margin-bottom: 36px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 28px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(54, 20, 20);
+  background: linear-gradient(135deg, #95ddff9f, #76dfffb0);
+  transition: 0.25s;
+  box-shadow: 0 10px 25px rgba(134, 237, 255, 0.493);
+}
+  
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgb(184, 250, 255);
+}
+
+.footer-note {
+  margin-top: 22px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+@media (max-width: 430px) {
+
+   body {
+    padding: 16px;
+    align-items: center;     
+    justify-content: center;
+    min-height: 100svh;    
+  }
+
+  .card {
+    padding: 28px 18px;
+    border-radius: 20px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    margin-bottom: 26px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg-bubble" style="left:10%; animation-delay:0s;"></div>
+<div class="bg-bubble" style="left:30%; animation-delay:3s;"></div>
+<div class="bg-bubble" style="left:55%; animation-delay:6s;"></div>
+<div class="bg-bubble" style="left:75%; animation-delay:2s;"></div>
+<div class="bg-bubble" style="left:90%; animation-delay:8s;"></div>
+
+<div class="card">
+  <h1>101 причина улыбнуться сегодня</h1>
+
+  <div class="subtitle">
+    маленькая подборка того, что делает тебя особенной
+  </div>
+
+  <a href="compliments.html" class="btn">
+    открыть
+  </a>
+
+</div>
+
+</body>
+</html>
